@@ -1,7 +1,7 @@
 import gradio
 
-def hello(YOUR_NAME):
-  return "Hello {}!".format(YOUR_NAME)
+def hello(inp):
+  return "Hello {}!".format(inp)
 
 io = gradio.Interface(fn=hello, inputs='text', outputs='text', title='Hello World', 
     description='My first hosted interface!',share=True)  
