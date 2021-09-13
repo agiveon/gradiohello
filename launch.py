@@ -4,5 +4,5 @@ def hello(inp):
   return "Hello {}!".format(inp)
 
 io = gradio.Interface(fn=hello, inputs='text', outputs='text', title='Hello World', 
-    description='My first hosted interface!')  
+    description='My first hosted interface!',share=True)  
 io.launch()
